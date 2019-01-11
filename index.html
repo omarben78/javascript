@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formulaire</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<h1>Formulaire de vérification</h1>
+  <p>Bienvenue sur mon site</p>
+	<form name="monFormulaire" id="monFormulaire" method="post" action="test.html">
+    <table>
+<div>
+  <tr>
+  <th><label class="label">Votre nom :</label></th>
+  <th><input class="controle" type="text" name="pseudo" required pattern="[0-9a-zA-Z-\.]{3,12}" placeholder="De 3 à 12 caractères"></th>
+</tr>
+</div>
+<div>
+  <tr>
+  <th><label class="label">Votre mail :</label></th>
+  <th><input class="controle" type="email" name="mail" required placeholder="mail@serveur.com"></th>
+</tr>
+</div>
+<div>
+  <tr>
+  <th><label class="label">Votre contribution :</label></th>
+  <th><input class="controle" type="number" name="contribution" min="0" max="10" required placeholder="Entre 1 et 10"></th>
+</tr>
+</div>
+<div>
+  <tr>
+  <th><label class="label">Votre date de venue :</label></th>
+  <th><input class="controle" type="date" name="venue"  required></th>
+</tr>
+</div>
+<div>
+  <tr>
+  <th><input type="submit" value="Envoyer"></th>
+</tr>
+</div>
+</form>
+
+</body>
+</html>
